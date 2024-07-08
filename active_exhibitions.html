@@ -1,0 +1,15 @@
+<!-- active_exhibitions.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active exhibitions</title>
+</head>
+<body>
+    <h1>Active exhibitions</h1>
+    <ul>
+        {% for exhibition in exhibitions %}
+            <li>{{ exhibition.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

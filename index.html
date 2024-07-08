@@ -1,0 +1,20 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Gallery Management</title>
+</head>
+<body>
+    <h1>Art Gallery Management</h1>
+    <ul>
+        <li><a href="{{ url_for('insert_artist') }}">Insert a new artist</a></li>
+        <li><a href="{{ url_for('update_artwork_price') }}">Update the price of an artwork</a></li>
+        <li><a href="{{ url_for('delete_customer') }}">Delete a customer record</a></li>
+        <li><a href="{{ url_for('average_artwork_price') }}">Find the average price of all artworks</a></li>
+        <li><a href="{{ url_for('artworks_with_artist') }}">Retrieve all artworks along with the artist's name</a></li>
+        <li><a href="{{ url_for('active_exhibitions') }}">Find all exhibitions that are currently active</a></li>
+        <li><a href="{{ url_for('customers_with_more_than_3_artworks') }}">Find customers who have purchased more than 3 artworks</a></li>
+        <li><a href="{{ url_for('exhibitions_with_artwork_count') }}">List each exhibition and the total number of artworks booked for it</a></li>
+    </ul>
+</body>
+</html>

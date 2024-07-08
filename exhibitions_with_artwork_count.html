@@ -1,0 +1,14 @@
+<!-- exhibitions_with_artwork_count.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exhibitions with artwork count</title>
+</head>
+<body>
+    <h1>Exhibitions with artwork count</h1>
+        <ul>{% for exhibition in exhibitions %}
+            <li>{{ exhibition.title }} ({{ exhibition.artwork_count }} artworks)</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

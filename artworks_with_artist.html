@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artworks with artist's name</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+{% block content %}
+  <form method="POST">
+    <label for="artist_name">Artist Name:</label>
+    <input type="text" id="artist_name" name="artist_name">
+    <input type="submit" value="Submit">
+  </form>
+  <h1>Artworks with Artists</h1>
+  {{ artworks }}  <!-- Add this line to see what's being passed to the template -->
+  <ul>
+    {% for artwork, artist in artworks %}
+      <li>Artwork: {{ artwork.title }} by {{ artist.name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+</body>
+</html>

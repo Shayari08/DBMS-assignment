@@ -1,0 +1,15 @@
+<!-- customers_with_more_than_3_artworks.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customers with more than 3 artworks</title>
+</head>
+<body>
+    <h1>Customers with more than 3 artworks</h1>
+    <ul>
+        {% for customer in customers %}
+            <li>{{ customer.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
